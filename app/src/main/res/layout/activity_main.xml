@@ -5,15 +5,81 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EDE8BE"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/lblTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="95dp"
+        android:text="Unit Converter"
+        android:textAlignment="center"
+        android:textColor="#2F0E03"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnType"
+        android:layout_width="286dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="46dp"
+        android:backgroundTint="#2F0E03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitle" />
+
+    <EditText
+        android:id="@+id/txtInput"
+        android:layout_width="286dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2F0E03"
+        android:ems="10"
+        android:hint="Enter Value"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnType" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="192dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="110dp"
+        android:backgroundTint="#FF9800"
+        android:text="C o n v e r t"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInput"
+        app:strokeColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/lblOutput"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="81dp"
+        android:text="Result:"
+        android:textAlignment="center"
+        android:textColor="#2F0E03"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvert" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

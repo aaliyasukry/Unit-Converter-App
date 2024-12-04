@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "lk.nibm.ku.hdse233f.unitconverterapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "lk.nibm.ku.hdse233f.unitconverterapp"
